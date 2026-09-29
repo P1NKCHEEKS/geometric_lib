@@ -1,10 +1,82 @@
-# Math formulas
-## Area
-- Circle: S = πR²
-- Rectangle: S = ab
-- Square: S = a²
 
-## Perimeter
-- Circle: P = 2πR
-- Rectangle: P = 2a + 2b
-- Square: P = 4a
+# Общее описание:
+**Geometric Lib**-Библиотека на Python для вычесления площади,периметра у треугольника,квадрата,круга
+
+# Функции и примеры вызова:
+
+## Модуль `circle.py` (круг)
+
+### `area(r)`
+Вычисляет площадь круга по формуле `S = π · r²`
+
+- `r` — радиус круга
+- Возвращает число типа `float`
+
+```
+circle.area(2)
+12.566370614359172
+```
+
+### `perimeter(r)`
+Вычисляет длину окружности по формуле `P = 2 · π · r`
+
+- `r` — радиус круга.
+- Возвращает число типа `float`
+
+```
+circle.perimeter(1)
+6.283185307179586
+```
+
+## Модуль `square.py` (квадрат)
+
+### `area(a)`
+Вычисляет площадь квадрата по формуле `S = a²`
+
+- `a` — длина стороны квадрата
+
+```
+square.area(5)
+25
+```
+
+### `perimeter(a)`
+Вычисляет периметр квадрата по формуле `P = 4 · a`
+
+- `a` — длина стороны квадрата.
+
+```
+square.perimeter(5)
+20
+```
+
+## Модуль `triangle.py` (треугольник)
+
+### `area(a, h)`
+Вычисляет площадь треугольника по формуле `S = a · h / 2`
+
+- `a` — длина основания
+- `h` — высота, проведённая к основанию
+
+```
+triangle.area(6, 4)
+12.0
+```
+
+### `perimeter(a, b, c)`
+Вычисляет периметр треугольника по формуле `P = a + b + c`
+
+- `a`, `b`, `c` — длины трёх сторон
+
+```
+triangle.perimeter(3, 4, 5)
+12
+```
+
+# История измененя проекта:
+### хэш     /  описание изменения 
+#### `f21bc91` /  (HEAD -> main) add comments about funcs in triangle.py 
+#### `672772b` /  add comments about funcs in square.py
+#### `1193e1c` /  add comments about funcs in circle.py
+#### `d078c8d` /  (origin/main, origin/HEAD) L-03: Docs added
+#### `8ba9aeb` /  L-03: Circle and square added
