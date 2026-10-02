@@ -73,10 +73,10 @@ triangle.perimeter(3, 4, 5)
 12
 ```
 
-# История измененя проекта:
+# История изменения проекта:
 ### хэш     /  описание изменения 
-#### `f21bc91` /  (HEAD -> main) add comments about funcs in triangle.py 
+#### `f21bc91` /  add comments about funcs in triangle.py 
 #### `672772b` /  add comments about funcs in square.py
 #### `1193e1c` /  add comments about funcs in circle.py
-#### `d078c8d` /  (origin/main, origin/HEAD) L-03: Docs added
+#### `d078c8d` /  L-03: Docs added
 #### `8ba9aeb` /  L-03: Circle and square added
