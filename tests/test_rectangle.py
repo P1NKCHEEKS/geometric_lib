@@ -4,7 +4,7 @@ from rectangle import area, perimeter
 
 
 class RectangleTestCase(unittest.TestCase):
-    """Тесты для модуля rectangle (прямоугольник)."""
+    """Тесты для модуля rectangle"""
 
     def test_area_zero_width(self):
         self.assertEqual(area(10, 0), 0)
@@ -17,6 +17,9 @@ class RectangleTestCase(unittest.TestCase):
 
     def test_perimeter_positive_sides(self):
         self.assertEqual(perimeter(3, 4), 14)
+
+    def test_perimeter_string_concatenation(self):
+        self.assertEqual(perimeter("3", "4"), "34")
 
 
 if __name__ == '__main__':

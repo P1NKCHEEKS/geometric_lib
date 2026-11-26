@@ -5,7 +5,7 @@ from circle import area, perimeter
 
 
 class CircleTestCase(unittest.TestCase):
-    """Тесты для модуля circle (круг)."""
+    """Тесты для модуля circle """
 
     def test_area_zero_radius(self):
         self.assertEqual(area(0), 0)

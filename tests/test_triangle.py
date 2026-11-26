@@ -4,7 +4,7 @@ from triangle import area, perimeter
 
 
 class TriangleTestCase(unittest.TestCase):
-    """Тесты для модуля triangle (треугольник)."""
+    """Тесты для модуля triangle """
 
     def test_area_zero_height(self):
         self.assertEqual(area(5, 0), 0)
@@ -17,6 +17,9 @@ class TriangleTestCase(unittest.TestCase):
 
     def test_perimeter_positive_sides(self):
         self.assertEqual(perimeter(3, 4, 5), 12)
+
+    def test_perimeter_string_concatenation(self):
+        self.assertEqual(perimeter("3", "4", "5"), "345")
 
 
 if __name__ == '__main__':
