@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.9"
+          python-version: "3.16.0"
 
       - name: Run unit tests
         run: python -m unittest discover -v
