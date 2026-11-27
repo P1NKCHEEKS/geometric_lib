@@ -16,8 +16,8 @@ jobs:
           - windows-latest
 
     steps:
-      - name: Checkout called repository
-        uses: dariocurr/checkout-called@v4.1.7
+      - name: Checkout
+        uses: actions/checkout@v6.1.0
 
       - name: Setup Python
         uses: actions/setup-python@v7.1.0
