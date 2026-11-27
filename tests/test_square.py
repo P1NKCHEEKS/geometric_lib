@@ -21,6 +21,19 @@ class SquareTestCase(unittest.TestCase):
     def test_perimeter_string_concatenation(self):
         self.assertEqual(perimeter("5"), "5555")
 
+    def test_negative_side(self):
+        self.assertEqual(area(-5), 25)
+        self.assertEqual(perimeter(-5), -20)
+
+    def test_empty_string(self):
+        with self.assertRaises(TypeError):
+            area("")
+        self.assertEqual(perimeter(""), "")
+
+    def test_area_string_raises(self):
+        with self.assertRaises(TypeError):
+            area("5")
+
 
 if __name__ == '__main__':
     unittest.main()

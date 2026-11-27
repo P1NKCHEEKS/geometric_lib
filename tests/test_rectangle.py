@@ -21,6 +21,20 @@ class RectangleTestCase(unittest.TestCase):
     def test_perimeter_string_concatenation(self):
         self.assertEqual(perimeter("3", "4"), "34")
 
+    def test_negative_sides(self):
+        self.assertEqual(area(-3, 4), -12)
+        self.assertEqual(perimeter(-3, 4), 1)
+
+    def test_empty_string(self):
+        self.assertEqual(area("", 4), "")
+        with self.assertRaises(TypeError):
+            area("", "")
+        self.assertEqual(perimeter("", ""), "")
+
+    def test_area_string_raises(self):
+        with self.assertRaises(TypeError):
+            area("3", "4")
+
 
 if __name__ == '__main__':
     unittest.main()

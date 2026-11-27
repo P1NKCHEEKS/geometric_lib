@@ -18,6 +18,22 @@ class CircleTestCase(unittest.TestCase):
     def test_perimeter_positive_radius(self):
         self.assertAlmostEqual(perimeter(2), 12.566370614359172)
 
+    def test_negative_radius(self):
+        self.assertAlmostEqual(area(-2), 12.566370614359172)
+        self.assertAlmostEqual(perimeter(-2), -12.566370614359172)
+
+    def test_empty_string(self):
+        with self.assertRaises(TypeError):
+            area("")
+        with self.assertRaises(TypeError):
+            perimeter("")
+
+    def test_string_argument(self):
+        with self.assertRaises(TypeError):
+            area("2")
+        with self.assertRaises(TypeError):
+            perimeter("2")
+
 
 if __name__ == '__main__':
     unittest.main()
