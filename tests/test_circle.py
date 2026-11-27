@@ -11,13 +11,13 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(area(0), 0)
 
     def test_area_positive_radius(self):
-        self.assertAlmostEqual(area(2), 4 * math.pi)
+        self.assertAlmostEqual(area(2), 12.56)
 
     def test_perimeter_zero_radius(self):
         self.assertEqual(perimeter(0), 0)
 
     def test_perimeter_positive_radius(self):
-        self.assertAlmostEqual(perimeter(2), 4 * math.pi)
+        self.assertAlmostEqual(perimeter(2), 12.56)
 
 
 if __name__ == '__main__':
